@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Digital Safe | About</title>
+	<link rel="stylesheet" href="./CSS/styles.css">
+	<link rel="stylesheet" href="./CSS/about.css">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600;700&display=swap" rel="stylesheet">
+	<script defer src="D:/Website/Javascript/main.js"></script>
+	<script defer src="D:/Website/Javascript/contactform.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+
+<body>
+	<header>
+		<nav class="navbar">
+			<span class="navbar-toggle" id="navbar-toggle">
+				<i class="fa fa-bars"></i>
+			</span>
+		<a href="index.html" class="site-logo">
+			<img src="Images/logo1.png" width="160" height="160" alt="sitelogo">
+		</a>
+		<ul class="main-nav" id="main-nav">
+			<li><a href="index.html" class="nav-links">Home</a></li>
+			<li><a href="youngpeople.html" class="nav-links" target="_blank">Young People</a></li>
+			<li><a href="parents.html" class="nav-links" target="_blank">Parents/Carers</a></li>
+			<li><a href="signup.html" class="nav-links" target="_blank">Sign Up</a></li>
+			<li><a href="about.html" class="nav-links" target="_blank">About</a></li>
+		</ul>
+		</nav>
+
+		<div class="about-container">
+			<div class="about-main-content">
+				<h1><strong>About Us</h1></strong>
+				<p><br>Digtial Safe is a site dedicated to helping protect young people from the dangers of the internet. Our mission is to become a global community that can help safeguard young children and educate wider communitites about the need to use the internet and its accompanying resources responsibly.</p>
+			</div>
+		</div>
+	</header>
+
+	<section class="team-main-container">
+		<div class="team-main-content">
+			<h1><strong>Digital Safe: Our Team</strong></h1>
+			<p><br>Here at Digital Safe, our team is determined to work hard to help 
+			make the internet a safer place for everyone. Our team can be contacted via 
+			their social media outlets or alternatively you can fill in the contact 
+			us form below and we will do our best to get back to you as soon as possible!</p>
+		</div>
+	</section>
+
+	<section class="team-container">
+		<div class="team-heading">
+			<h1>Our Team...</h1>
+		</div>
+
+		<div class="team-containers">
+			<div class="team-box">
+				<img src="Images/user.png" alt="user-image">
+				<div class="name">Elina Krause</div>
+				<div class="details">CEO</div>
+				<div class="about-details">"My vision is to make the internet a safer place for everyone."</div>
+				<div class="team-social">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+
+			<div class="team-box">
+				<img src="Images/user2.png" alt="user-image">
+				<div class="name">Jevon Stewart</div>
+				<div class="details">CIO</div>
+				<div class="about-details">"I want to provide the right advice to young people and parents."</div>
+				<div class="team-social">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+
+			<div class="team-box">
+				<img src="Images/user3.png" alt="user-image">
+				<div class="name">Melissa Warner</div>
+				<div class="details">CO-FOUNDER</div>
+				<div class="about-details">"I want to protect young people & provide the right guidance."</div>
+				<div class="team-social">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact-main-container">
+		<div class="contact-main-content">
+			<h1><strong>Contact Us!</strong></h1>
+			<p><br>You can fill in the form found below if you have any questions or 
+			simply would just like to get in touch with us! We will do our best to 
+			respond to any queries or messages as soon as possible.</p>
+		</div>
+	</section>
+
+	<section class="contact-items">
+		<div class="contact-section">
+			<div class="contact-info-details">
+				<div><i class="fa fa-map-marker"></i>DigitalSafe,<br>London,N43 5YH</div>
+				<div><i class="fa fa-envelope"></i>digitalsafe@email.com</div>
+				<div><i class="fa fa-phone"></i></i>020 7872 8432</div>
+			</div>
+			<div class="main-contact-form">
+				<h2>Contact Us...</h2>
+				<form name="contactform" action= "contact-form-handler.php" method="POST">
+
+					<input type="text" name="firstname" class="text-box" placeholder="First Name... (Required)" oninput ="ValidateFName()"
+					required="required">
+					<span id = "fnamemessage" style="color:#fff"> </span> 
+
+					<input type="text" name="lastname" class="text-box" placeholder="Last Name... (Required)" oninput ="ValidateLName()"
+					required="required">
+					<span id = "lnamemessage" style="color:#fff"> </span> 
+
+					<input type="email" name="email" class="text-box" placeholder="Your Email... (Required)" oninput ="ValidateEMail()"
+					required="required">
+					<span id = "emailmessage" style="color:#fff"> </span>
+
+					<input type="text" name="phone" class="text-box" placeholder="Phone Number... (Required)" oninput ="ValidatePhone()"
+					required="required">
+					<span id = "phonemessage" style="color:#fff"> </span>  
+
+					<textarea name="message" rows="5" placeholder="Your Message... (Required)" required="required"></textarea>
+
+					<input type="submit" name="submit" class="send-button" value="Send">
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<button id="btnScrollToTop">
+		<i class="fa fa-arrow-circle-up"></i>
+		<p>Top</p>
+	</button>
+
+	<footer id="footer-items">
+		<div id="footer-logo">
+			<img src="Images/logo1.png" alt="sitelogo">
+		</div>
+
+		<div id="footer-content">
+			<p>&copy;Digital Safe 2020</p>
+			<p><br>This site is only for demonstrational purposes and has been developed for an educational exercise. The site contains text and media from external sources which have been referenced in the documentation  created for this site.</p><br>
+		</div>
+
+		<div id="footer-social-links">
+			<a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+			<a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+			<a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+		</div>
+	</footer>
+</body>
+</html>

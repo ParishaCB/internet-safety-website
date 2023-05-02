@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Digital Safe | Sign Up</title>
+	<link rel="stylesheet" href="./CSS/styles.css">
+	<link rel="stylesheet" href="./CSS/signupstyle.css">
+	<script defer src="./Javascript/main.js"></script>
+	<script defer src="./Javascript/newsletterform.js"></script>
+	<script defer src="./Javascript/signupform.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+				<span class="navbar-toggle" id="navbar-toggle">
+					<i class="fa fa-bars"></i>
+				</span>
+			<a href="index.html" class="site-logo">
+				<img src="Images/logo1.png" width="160" height="160" alt="sitelogo">
+			</a>
+			<ul class="main-nav" id="main-nav">
+				<li><a href="index.html" class="nav-links">Home</a></li>
+				<li><a href="youngpeople.html" class="nav-links" target="_blank">Young People</a></li>
+				<li><a href="parents.html" class="nav-links" target="_blank">Parents/Carers</a></li>
+				<li><a href="signup.html" class="nav-links" target="_blank">Sign Up</a></li>
+				<li><a href="about.html" class="nav-links" target="_blank">About</a></li>
+			</ul>
+		</nav>
+
+		<div id="info-container">
+			<div class="box-info">
+				<h1><strong>Sign Up</strong></h1>
+				<p><br>Use the buttons below if you want to create an account with us or simply sign up to our newsletter!</p>
+				<div class="buttons-signup">
+					<br><a href="#sign-up-container" class="button-one">Create Account</a>
+					<br><a href="#newsletter-section" class="button-two">Sign up to newsletter</a>
+				</div>
+			</div>
+		</div>	
+	</header>
+
+	<section id="sign-up-container">
+		<div class="sign-up-content">
+			<h1><strong>Sign Up To Digital Safe!</strong></h1>
+			<p><br>Create an account with us today to stay up to date with new advice and 
+			information.<br>By creating an account you will become a member of our growing
+			Digital Safe community.<br></p>
+		</div>
+	</section>
+
+	<section id="sign-up-section">
+		<form name="signupForm" method="POST" action="sign-up.php">
+			<div class="signup-info-container">
+				<h1>Sign Up To <span>Digital Safe:</span></h1>
+				<p class="main-info"><br>Complete this form to create an account. All fields below are required.</p>
+
+				<label for="name"><b><br>Name</b></label>
+				<input type="text" placeholder="Name (REQUIRED)" name="Name" id="Name" oninput ="Validatename()"
+	  			required="required">
+				<span id = "messageName" style="color:#BD0000"> </span> <br><br>
+
+			    <label for="email"><b>Email</b></label>
+			    <input type="text" placeholder="Enter Email (REQUIRED)" name="email" id="email" oninput ="ValidateMail()" required="required">
+				<span id = "messagemail" style="color:#BD0000"> </span> <br><br>    
+
+			    <label for="password"><b>Password (must be minimum 8 characters, contain a capital letter, a lowercase letter, a number and a special character)</b></label>
+			    <input type="password" placeholder="Enter Password (REQUIRED)" name="psw" id="password" oninput ="ValidatePassword()"
+			    required="required">
+				<span id = "passwordmessage" style="color:#BD0000"> </span> <br><br>    
+
+			    <label for="password-repeat"><b>Repeat Password</b></label>
+			    <input type="password" placeholder="Repeat Password (REQUIRED)" name="psw-repeat" id="password-repeat" 
+			    oninput ="CheckPassword()"required="required">
+				<span id = "messagerepeat" style="color:#BD0000"> </span> <br><br>    
+
+			    <p class="creating-account">By creating an account you agree to our 
+			    	<a href="#">Terms & Privacy.</a>
+			    </p>
+
+			    <button type="submit" class="button-sign">Sign Me Up!</button>
+  			</div>
+		</form>
+	</section>
+
+	<section class="news-letter-container">
+		<div class="news-letter-content">
+			<h1><strong>Sign Up To Our Newsletter Today!</strong></h1>
+			<p><br>Sign up to our newsletter today to get weekly updates about our work
+			here at Digital Safe as well as the latest information in terms of different 
+			applications and updated advice.</p>
+		</div>
+	</section>
+
+	<section id="newsletter-section">
+		<form name="newsForm" method="POST" action="newsletter-handler.php">
+			<div class="content-container">
+				<h2>Subscribe To <span>Digital Safe's</span> Newsletter:</h2>
+				<br><p>Enter your details below to receive a weekly newsletter about the latest technology details and top tips/advice!<br>You can unsubscribe at any time you like.</p>
+  			</div>
+  			<div class="newsletter-details-container">
+	  			<input type="text" placeholder="Name (REQUIRED)" name="name" id="name" oninput ="ValidateName()" 
+	  			required="required">
+				<span id = "messagename" style="color:#BD0000"> </span> <br><br>    
+
+				<input type="email" placeholder="Email (REQUIRED)" name="email" id="email-address" oninput ="ValidateEmail()" required="required">
+				<span id = "emailmessage" style="color:#BD0000"> </span> <br><br>    
+
+	    		<input type="submit" class="submit" value="Subscribe!">
+ 			</div>
+		</form>
+	</section>
+
+	<button id="btnScrollToTop">
+		<i class="fa fa-arrow-circle-up"></i>
+		<p>Top</p>
+	</button>
+
+	<footer id="footer-items">
+		<div id="footer-logo">
+			<img src="Images/logo1.png" alt="sitelogo">
+		</div>
+
+		<div id="footer-content">
+			<p>&copy;Digital Safe 2020</p>
+			<p><br>This site is only for demonstrational purposes and has been developed for an educational exercise. The site contains text and media from external sources which have been referenced in the documentation  created for this site.</p><br>
+		</div>
+
+		<div id="footer-social-links">
+			<a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+			<a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+			<a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+		</div>
+	</footer>
+
+</body>
+</html>
