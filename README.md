@@ -1,4 +1,4 @@
-# internet-safety-website
+# Digital Safe - Internet Safety Website 
 
 A basic internet safety website consisting of 5 main pages:
 
