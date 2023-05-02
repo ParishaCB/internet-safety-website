@@ -1,0 +1,462 @@
+header {
+	background-image: url(../Images/image4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.content-container {
+	background: #144572;
+	height: 38vh;
+	width: 43%;
+	display: flex;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-48%, -28%);
+	align-items: center;
+	justify-content: center;
+}
+
+.info-box {
+	color: #fff;
+	padding: 10px 10px;
+	text-align: center;
+	position: absolute;
+}
+
+.info-box h1 {
+	font-size: 45px;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	display: inline-block;
+	border-right: 1px solid #000;
+	animation: type 2s steps(13, end);
+}
+@keyframes type {
+	from {
+		width: 0ch;
+	}
+	to {
+		width: 13ch;
+	}
+}
+
+.info-box p {
+	font-size: 20px;
+	padding: 10px;
+}
+
+/*////////////TOP TIPS SECTION////////////////////*/
+.top-tips-container {
+	background-color: #121D4D;
+	display: flex;
+	padding: 20px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.top-tips-content h1 {
+	color: #fff;
+	font-size: 35px;
+}
+
+.top-tips-content p {
+	color: #fff;
+	font-size: 22px;
+}
+
+/*///////////STYLING THE ARTICLE SECTION RELATED TO THE TOP TIPS//////////////*/
+.top-tips-info {
+	background-color: #5098BA;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: 'IBM Plex Mono', monospace;
+	padding: 10px;
+}
+
+.top-tips-info h2 {
+	background-color: #00737D;
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.top-tips-info p {
+	color: #001A21;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.top-tip-videos {
+	width: 100%;
+	max-width: 450px;
+	margin: 5px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.video-container {
+	width: 100%;
+	max-width: 100%;
+	height: 0;
+	padding-bottom: 56.25%; 
+	position: relative;
+}
+
+.video-container iframe {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 15px;
+}
+
+.top-tip-heading h2 {
+	background-color: #00737D;
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+/*/////////////////////////FLIP CARD STYLING////////////////////////*/
+.flip-card-tip {
+  display: inline-block;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.tip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-tip:hover .tip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.tip-card-front, .tip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tip-card-front {
+  background-color: #132D9F;
+  color: black;
+}
+
+.tip-card-front h1 {
+  padding: 58px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.tip-card-front h1 span {
+	font-size: 18px;
+	font-style: italic;
+	color: #fff;
+}
+
+.tip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.tip-card-back h3 {
+	padding-top: 38px;
+}
+
+.tip-card-back p {
+  padding: 25px;
+  font-size: 18px;
+}
+
+/*////////////////////////////////QUIZ SECTION////////////////////////////////*/
+.java-quiz {
+	background-color: #121D4D;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: 'IBM Plex Mono', monospace;
+	padding: 10px;
+}
+
+.java-quiz h2 {
+	color: #fff;
+	font-size: 35px;
+}
+
+.java-quiz p {
+	color: #fff;
+	font-size: 22px;
+}
+
+/*////////////////////////QUIZ ARTICLE SECTION STYLING////////////////////////*/
+.java-quiz-content {
+	background-color: #BBD6E3;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: 'IBM Plex Mono', monospace;
+	padding: 10px;
+}
+
+.java-quiz-content h2 {
+	background-color: #006077;
+	color: #fff;
+	font-size: 25px;
+}
+
+.java-quiz-main {
+	background-color: #699DE7;
+}
+
+#quiz-container {
+    width: 60%;
+    margin:auto;
+    padding: 10px 25px 40px 20px;
+    background-color: #199fdb;
+    border: #000 solid;
+    border-radius:5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#quiz-title h1 {
+	text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #005E6A;
+}
+
+#main-quiz {
+    text-indent: 30px;
+    display: none;
+    font-family: 'IBM Plex Mono', monospace;
+    line-height: 50px;
+}
+
+.next-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#next-button {
+    border: 4px solid;
+    border-radius: 8px;
+    width: 80px;
+    padding: 5px;
+    position: relative;
+    float: right;
+    background-color: #121D4D;
+    color: black;
+    margin: 0 2px 0 2px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#next-button:hover {
+	background-color: #13ab3b;
+}
+
+#start-button {
+    display:none;
+    width: 100px;
+    background-color: #121D4D;
+    margin: 20px;
+    text-align: center;
+}
+
+.start-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#start-button:hover {
+	background-color: #13ab3b;
+}
+
+ul {
+    list-style-type: none;
+    color: #000;
+}
+/*///////////////////////APPLICATION SECTION///////////////////////////////////////*/
+.advice-content {
+	background-color: #121D4D;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: 'IBM Plex Mono', monospace;
+	padding: 10px;
+}
+
+.advice-content h2 {
+	color: #fff;
+	font-size: 35px;
+}
+
+.advice-content p {
+	color: #fff;
+	font-size: 22px;
+}
+
+/*////////////////////////APPLICATIONS ARTICLE SECTION//////////////////////*/
+.advice-content-info {
+	background-color: #5098BA;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: 'IBM Plex Mono', monospace;
+	padding: 10px;
+}
+
+.advice-content-info h2 {
+	background-color: #096174;
+	color: #fff;
+	font-size: 25px;
+}
+
+.main-advice {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 320px);
+	justify-content: center;
+}
+
+.apps-container {
+	overflow: hidden;
+	text-align: center;
+	border-radius: 10px;
+	position: relative;
+	margin: 30px;
+	background-color: #356187;
+	border: 2px solid #0079;
+}
+
+.apps-container:hover {
+	background-color: #005252;
+	cursor: pointer;
+	transform: scale(1.2);
+	transition: 0.3s;
+}
+
+.app-image {
+	margin: 10px;
+}
+
+.app-name {
+	font-size: 24px;
+	font-weight: bold;
+	color: #E5E961;
+}
+
+.app-description {
+	color: #EFEFEF;
+	margin: 5px 10px;
+	font-size: 14px;
+}
+/*//////////////////////////////MEDIA QUERIES/////////////////////////////////*/
+
+@media only screen and (max-width: 1440px) {
+	.info-box h1 {
+		font-size: 22px;
+	}
+
+	.info-box p {
+		font-size: 18px;
+	}
+
+@media only screen and (max-width: 1024px) {
+	.content-container {
+		width: 50%;
+		height: 30vh;
+		top: 70%;
+		left: 35%;
+		transform: translate(-20%, -20%);
+	}
+
+	.info-box h1 {
+		font-size: 16px;
+	}
+
+	.info-box p {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.content-container  {
+		width: 70%;
+		top: 70%;
+		left: 30%;
+		transform: translate(-20%, -20%);
+	}
+
+	.flip-card-tip {
+		padding: 10px;
+	}
+}
+
+@media only screen and (max-width: 427px) {
+	.info-box p {
+		font-size: 13px;
+	}
+
+	.flip-card-tip {
+		padding: 10px;
+	}
+}
+
+@media only screen and (max-width: 377px) {
+	.content-container {
+		width: 80%;
+		height: 34vh;
+		top: 70%;
+		left: 30%;
+		transform: translate(-20%, -20%);
+	}
+
+	.info-box p {
+		font-size: 12px;
+	}
+
+	.flip-card-tip {
+		padding: 10px;
+	}
+
+	#quiz-title h1 {
+		font-size: 20px;
+	}
+
+	ul {
+		font-size: 12px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.apps-container:hover {
+		transform: none;
+	}
+}
+
+}
