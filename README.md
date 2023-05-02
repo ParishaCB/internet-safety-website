@@ -1,6 +1,6 @@
 # internet-safety-website
 
-A mock internet safety website consisting of 5 main pages:
+A basic internet safety website consisting of 5 main pages:
 
 - Homepage
 - Young People Page
