@@ -1,0 +1,36 @@
+<?php
+	$account_name = $_POST['Name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+	$password_repeat = $_POST['passwordrepeat'];
+
+    $email_from = 'DigitalSafe@parisha.com';
+
+    $email_subject = "New Account Creation";
+
+    $email_body = "Account Name: $account_name.\n".
+                    "Email: $email.\n".
+                        "Password: $password.\n".
+                        	"Confirmed Password: $password_repeat.\n".
+
+    $to = "parishab112@gmail.com";
+
+    $headers = "From: $email_from \r\n";
+
+    $headers = "Reply-To: $email \r\n";
+
+    $mail_sent = mail($to,$email_subject,$email_body,$headers);
+
+    header("Location: thanks-account.html");
+    exit();
+
+
+if ($mail_sent == false){ ?>
+    <script language="javascript" type="text/javascript">
+        alert('Message not sent. Please, try again later.');
+        window.location = 'signup.html';
+    </script>
+<?php
+}
+?>
+
