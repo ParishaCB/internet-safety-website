@@ -1,0 +1,28 @@
+let mainNavBar = document.getElementById('main-nav');
+let navBar = document.getElementById('navbar-toggle');
+
+navBar.addEventListener('click', function () {
+mainNavBar.classList.toggle('active');
+})
+
+//Get the button:
+let btnScrollToTop = document.getElementById("btnScrollToTop");
+
+// When the user scrolls down 20px from the top of the document, show the button and 
+// add event listener which will look for whether the button has been clicked
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    btnScrollToTop.style.display = "block";
+    btnScrollToTop.addEventListener('click', function () {
+    	window.scrollTo({
+    		top: 0,
+    		left: 0,
+    		behaviour: "smooth"
+    	});
+    })
+  } else {
+    btnScrollToTop.style.display = "none";
+  }
+}
